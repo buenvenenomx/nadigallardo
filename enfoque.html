@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8DA9C4",
+                        "sand": "#f4f1ea",
+                        "soft-earth": "#8c786a",
+                        "background-light": "#fafaf9",
+                        "background-dark": "#1c1c1a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+    <title>Mi Enfoque - Nadir Gallardo</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans selection:bg-primary/30">
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+        
+        <!-- Navigation -->
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-5 bg-background-light/80 backdrop-blur-md sticky top-0 z-50">
+            <a href="/" class="flex items-center gap-3 text-slate-900 dark:text-slate-100">
+                <img src="img/NGlogo.png" alt="Nadir Gallardo Logo" class="h-20 w-auto">
+            </a>
+            <div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+                <nav class="flex items-center gap-8">
+                    <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="index.html#especialidades">Especialidades</a>
+                    <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="index.html#terapia">Terapia</a>
+                    <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="index.html#testimonios">Testimonios</a>
+                </nav>
+                <a href="https://wa.me/526141542824?text=Hola%20Nadir,%20me%20gustaría%20agendar%20una%20cita." target="_blank" class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
+                    <span>Reservar Sesión</span>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+            </div>
+        </header>
+
+        <main class="flex flex-col flex-1">
+            <!-- Hero Section -->
+            <section class="px-6 md:px-20 py-16 md:py-24 max-w-[1280px] mx-auto w-full">
+                <div class="flex flex-col gap-6 max-w-3xl">
+                    <a href="index.html" class="flex items-center gap-2 text-primary font-medium hover:underline mb-4">
+                        <span class="material-symbols-outlined text-sm">arrow_back</span>
+                        Volver al inicio
+                    </a>
+                    <h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-6xl font-serif leading-tight italic">
+                        Mi Enfoque <span class="not-italic font-bold">Terapéutico</span>
+                    </h1>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed">
+                        Entiendo la terapia como un proceso colaborativo y profundamente humano, donde la evidencia científica se encuentra con la calidez y la empatía.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Content Section 1: Approach -->
+            <section class="px-6 md:px-20 py-20 bg-sand/30">
+                <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-3xl font-serif text-slate-900 dark:text-white">Psicología Clínica y Humanista</h2>
+                            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                                Mi práctica se basa en la psicología clínica contemporánea, integrando herramientas de la terapia cognitivo-conductual con una mirada humanista centrada en la persona.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-3 p-6 bg-white dark:bg-slate-900/50 rounded-xl">
+                                <span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+                                <h3 class="font-bold text-slate-900 dark:text-white">Basado en evidencia</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Utilizo técnicas validadas para asegurar resultados reales y duraderos.</p>
+                            </div>
+                            <div class="flex flex-col gap-3 p-6 bg-white dark:bg-slate-900/50 rounded-xl">
+                                <span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+                                <h3 class="font-bold text-slate-900 dark:text-white">Vínculo Seguro</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Priorizo la creación de un espacio donde te sientas escuchado y no juzgado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden aspect-video shadow-xl" style='background-image: url("https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2040&auto=format&fit=crop"); background-size: cover; background-position: center;' data-alt="Zen therapy space">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Section 2: El Proceso -->
+            <section class="px-6 md:px-20 py-24 max-w-[1280px] mx-auto w-full">
+                <div class="flex flex-col gap-16">
+                    <div class="text-center max-w-2xl mx-auto flex flex-col gap-4">
+                        <h2 class="text-4xl font-serif text-slate-900 dark:text-white italic">El Paso a Paso</h2>
+                        <p class="text-slate-600 dark:text-slate-400 text-lg">
+                            Cada camino es único, pero estas son las etapas generales de nuestro trabajo juntos.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col gap-6 items-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold shadow-lg">1</div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Evaluación</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Iniciamos conociendo tu historia, tus retos actuales y lo que esperas lograr en terapia.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex flex-col gap-6 items-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold shadow-lg">2</div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Intervención</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Trabajamos activamente en el desarrollo de herramientas y la resolución de conflictos.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex flex-col gap-6 items-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold shadow-lg">3</div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Cierre y Seguimiento</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Consolidamos los aprendizajes y aseguramos que tengas la autonomía para seguir creciendo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="px-6 md:px-20 py-24 bg-primary text-white text-center">
+                <div class="max-w-3xl mx-auto flex flex-col gap-8 items-center">
+                    <h2 class="text-3xl md:text-5xl font-serif italic italic leading-tight">¿Estás listo para comenzar tu proceso?</h2>
+                    <p class="text-white/80 text-lg md:text-xl">Agenda hoy mismo tu sesión de valoración y da el primer paso hacia tu bienestar.</p>
+                    <a href="https://wa.me/526141542824?text=Hola%20Nadir,%20me%20gustaría%20agendar%20una%20cita." target="_blank" class="flex min-w-[240px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-white text-primary text-base font-bold shadow-xl hover:bg-slate-50 transition-all">
+                        Agendar por WhatsApp
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="px-6 md:px-20 py-16 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+                <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                    <img src="img/NGlogo.png" alt="Nadir Gallardo Logo" class="h-16 w-auto">
+                    <div class="flex gap-8">
+                        <a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Inicio</a>
+                        <a href="index.html#especialidades" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Especialidades</a>
+                        <a href="https://wa.me/526141542824" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Contacto</a>
+                    </div>
+                    <p class="text-slate-400 text-xs text-center md:text-left">© 2024 Nadir Gallardo. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

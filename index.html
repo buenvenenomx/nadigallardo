@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8DA9C4", // Dusty blue accent
+                        "sand": "#f4f1ea",
+                        "soft-earth": "#8c786a",
+                        "background-light": "#fafaf9",
+                        "background-dark": "#1c1c1a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans selection:bg-primary/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-5 bg-background-light/80 backdrop-blur-md sticky top-0 z-50">
+                <a href="/" class="flex items-center gap-3 text-slate-900 dark:text-slate-100">
+                    <img src="img/NGlogo.png" alt="Nadir Gallardo Logo" class="h-20 w-auto">
+                </a>
+<div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+<nav class="flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#especialidades">Especialidades</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#terapia">Terapia</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#testimonios">Testimonios</a>
+</nav>
+<a href="https://wa.me/526141542824?text=Hola%20Nadir,%20me%20gustaría%20agendar%20una%20cita." target="_blank" class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
+<span>Reservar Sesión</span>
+</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+</div>
+</header>
+<main class="flex flex-col flex-1">
+<!-- Hero Section -->
+<section class="px-6 md:px-20 py-12 md:py-24 max-w-[1280px] mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8 order-2 lg:order-1">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-medium tracking-widest uppercase text-xs">Psicología Clínica y del Desarrollo</span>
+<h1 class="text-slate-900 dark:text-slate-100 text-5xl md:text-7xl font-serif leading-[1.1] font-normal italic">
+                                    Un refugio seguro para tu <span class="not-italic font-bold">crecimiento personal.</span>
+</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed max-w-[540px]">
+                                    Profesionalismo cálido y experiencia clínica para ayudarte a navegar las transiciones de la vida con compasión.
+                                </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a href="https://wa.me/526141542824?text=Hola%20Nadir,%20me%20gustaría%20agendar%20una%20cita." target="_blank" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary text-white text-base font-bold shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all">Programar Cita</a>
+                <a href="enfoque.html" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-white border border-slate-200 text-slate-700 text-base font-medium hover:bg-slate-50 transition-all">
+                                    Conoce mi Enfoque
+                                </a>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative">
+<div class="absolute -top-6 -left-6 w-32 h-32 bg-sand rounded-full -z-10"></div>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/5 rounded-full -z-10"></div>
+<div class="w-full aspect-[4/5] bg-slate-200 rounded-xl overflow-hidden shadow-2xl grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Professional and welcoming female psychologist in a bright office" style='background-image: url("img/nadir1.png"); background-size: cover; background-position: center;'>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Especialidad en Desarrollo -->
+<section class="px-6 md:px-20 py-20 bg-sand/30" id="especialidades">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col gap-4 mb-16 text-center items-center">
+<h2 class="text-primary font-serif text-4xl md:text-5xl">Especialidad en Desarrollo</h2>
+<div class="w-20 h-0.5 bg-primary/30"></div>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                                Acompañando cada etapa de la vida con un enfoque basado en la evidencia y la sensibilidad humana.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group flex flex-col gap-6 p-8 bg-white dark:bg-slate-900/50 rounded-xl hover:shadow-xl transition-all duration-300">
+<div class="w-14 h-14 flex items-center justify-center rounded-full bg-sand text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">child_care</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Infancia</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Cultivando bases emocionales sólidas y seguras desde los primeros años de vida.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col gap-6 p-8 bg-white dark:bg-slate-900/50 rounded-xl hover:shadow-xl transition-all duration-300">
+<div class="w-14 h-14 flex items-center justify-center rounded-full bg-sand text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Adolescencia</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Guía en la búsqueda de identidad, retos académicos y transiciones emocionales.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col gap-6 p-8 bg-white dark:bg-slate-900/50 rounded-xl hover:shadow-xl transition-all duration-300">
+<div class="w-14 h-14 flex items-center justify-center rounded-full bg-sand text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">self_improvement</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Adultez Temprana</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Estableciendo independencia y fomentando el crecimiento profesional y personal.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Terapia Individual Section -->
+<section class="px-6 md:px-20 py-24 max-w-[1280px] mx-auto w-full" id="terapia">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2">
+<div class="rounded-xl overflow-hidden shadow-lg aspect-square lg:aspect-video" data-alt="Quiet and comfortable therapy room with soft natural light" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4gSKeqgQ7AmWrcrMx3CyscaRhy_n7hczsUKZPkUxUPI8n_apzLB3dUEiLMl4zeTzyGKsicDAI4wJmkxomfl_X_tM2VpC5Woga4TvoI6qZiIzAadSfpLGL9lzxLWPLhFfcAN5ohyLqifidZjn39Bbo4C45lNQRF1mhId5Uknp-TX8wva5MbMNZbnbYX_6nZ8yVjlhqPJ5IIDxaA64u0fppmbxY2TsKEsHB9TV8bh4rHFw1qJ1S8EwuAjdOeSLQJMeEtGbv-fbMHAPM"); background-size: cover; background-position: center;'>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col gap-6">
+<h2 class="text-4xl font-serif text-slate-900 dark:text-white italic">Terapia Individual: Un espacio para ti</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                                Mi enfoque de terapia individual se centra en crear un vínculo de confianza donde puedas explorar tus pensamientos y emociones sin juicios. Trabajamos juntos para identificar patrones y fortalecer tus recursos internos.
+                            </p>
+<ul class="flex flex-col gap-4 py-4">
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Gestión de ansiedad y estrés cotidiano</span>
+</li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Fortalecimiento de la autoestima</span>
+</li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Duelos y transiciones vitales</span>
+</li>
+</ul>
+<div class="pt-4">
+<a class="text-primary font-bold border-b-2 border-primary/20 hover:border-primary transition-all pb-1 inline-flex items-center gap-2" href="enfoque.html">Conocer más sobre el proceso <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonios -->
+<section class="px-6 md:px-20 py-24 bg-primary text-white overflow-hidden relative" id="testimonios">
+<div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="flex flex-col gap-12 text-center items-center">
+<span class="material-symbols-outlined text-5xl opacity-50">format_quote</span>
+<h2 class="text-3xl md:text-4xl font-serif italic max-w-3xl mx-auto leading-snug">
+                                "Nadir tiene una capacidad increíble para hacerte sentir escuchado y comprendido desde el primer momento. Su enfoque es profesional pero profundamente humano."
+                            </h2>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<span class="font-bold tracking-widest text-sm uppercase">Ana María S.</span>
+<span class="text-white/70 text-sm">Paciente desde 2022</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer / Contact -->
+<section class="px-6 md:px-20 py-24 bg-white dark:bg-background-dark" id="faq">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col gap-4 mb-16 text-center items-center">
+<h2 class="text-slate-900 dark:text-white font-serif text-4xl md:text-5xl italic">Preguntas Frecuentes</h2>
+<div class="w-20 h-0.5 bg-primary/30"></div>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                Resuelvo tus dudas iniciales para que te sientas con total confianza antes de comenzar tu proceso.
+            </p>
+</div>
+<div class="max-w-3xl mx-auto flex flex-col gap-4">
+<!-- FAQ Item 1 -->
+<details class="group border border-slate-100 dark:border-slate-800 rounded-xl bg-slate-50/50 dark:bg-slate-900/30 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-slate-900 dark:text-white transition-colors hover:bg-slate-100/50 dark:hover:bg-slate-800/50">
+<span class="text-lg font-medium">¿Cómo es la primera sesión?</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                    La primera sesión es una toma de contacto donde exploramos el motivo de tu consulta. Es un espacio seguro para que me cuentes qué te sucede y para que yo pueda explicarte mi forma de trabajar y cómo podemos abordar tus objetivos juntos.
+                </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group border border-slate-100 dark:border-slate-800 rounded-xl bg-slate-50/50 dark:bg-slate-900/30 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-slate-900 dark:text-white transition-colors hover:bg-slate-100/50 dark:hover:bg-slate-800/50">
+<span class="text-lg font-medium">¿Cuánto dura cada terapia?</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Cada sesión individual tiene una duración aproximada de 50 a 60 minutos. La duración total del proceso terapéutico varía según las necesidades y objetivos específicos de cada persona.
+                </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group border border-slate-100 dark:border-slate-800 rounded-xl bg-slate-50/50 dark:bg-slate-900/30 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-slate-900 dark:text-white transition-colors hover:bg-slate-100/50 dark:hover:bg-slate-800/50">
+<span class="text-lg font-medium">¿Ofreces sesiones online?</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Sí, realizo sesiones tanto de forma presencial en mi consultorio en Chihuahua como a través de videollamada, ofreciendo la misma calidad y confidencialidad en ambas modalidades para adaptarme a tu disponibilidad.
+                </div>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group border border-slate-100 dark:border-slate-800 rounded-xl bg-slate-50/50 dark:bg-slate-900/30 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between p-6 text-slate-900 dark:text-white transition-colors hover:bg-slate-100/50 dark:hover:bg-slate-800/50">
+<span class="text-lg font-medium">¿Con qué frecuencia son las sesiones?</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Al inicio, solemos recomendar una frecuencia semanal para establecer un buen vínculo y ritmo de trabajo. A medida que avanzas en tu proceso, las sesiones pueden espaciarse de forma quincenal o mensual según tus necesidades.
+                </div>
+</details>
+</div>
+</div>
+</section><footer class="px-6 md:px-20 py-16 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2 flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <img src="img/NGlogo.png" alt="Nadir Gallardo Logo" class="h-16 w-auto">
+                        </div>
+<p class="text-slate-600 dark:text-slate-400 max-w-sm">
+                                Psicóloga clínica colegiada dedicada al bienestar integral y el desarrollo humano en todas sus etapas.
+                            </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-slate-900 dark:text-white">Contacto</h4>
+<p class="text-slate-600 dark:text-slate-400 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+                                contacto@nadirgallardo.com
+                            </p>
+<p class="text-slate-600 dark:text-slate-400 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">call</span>
+                                614 154 2824
+                            </p>
+<p class="text-slate-600 dark:text-slate-400 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span data-location="Chihuahua, Chihuahua">Chihuahua, Chih.</span>
+</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-slate-900 dark:text-white">Horarios</h4>
+<p class="text-slate-600 dark:text-slate-400">Lun - Vie: 9:00 - 20:00</p>
+<p class="text-slate-600 dark:text-slate-400 italic text-sm">Sesiones presenciales y online</p>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:row justify-between items-center gap-4 text-slate-400 text-xs">
+<p>© 2024 Nadir Gallardo. Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Aviso Legal</a>
+<a class="hover:text-primary" href="#">Política de Privacidad</a>
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+</body></html>
